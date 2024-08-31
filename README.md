@@ -4,32 +4,15 @@
 </p>
 
 ## Wygląd
-<div style="text-align: center;">
-  <div style="display: inline-block; margin: 10px;">
-    <img src="https://github.com/user-attachments/assets/5d219913-2825-4d47-a9a1-d6d7b013d213" alt="homepage" height="500"/>
-  </div>
-  <div style="display: inline-block; margin: 10px;">
-    <img src="https://github.com/user-attachments/assets/f28c2a32-b2f5-47da-a9a9-4a71bae5eb0c" alt="favoritepage" height="500"/>
-  </div>
-  <div style="display: inline-block; margin: 10px;">
-    <img src="https://github.com/user-attachments/assets/9f2f76aa-3b21-4563-b0ef-72b20aa3a57b" alt="assistantpage" height="500"/>
-  </div>
-  <div style="display: inline-block; margin: 10px;">
-    <img src="https://github.com/user-attachments/assets/dfdc3b51-3763-4b58-bb15-fe713c6d1fbe" alt="detail1" height="500"/>
-  </div>
-</div>
-
-<div style="text-align: center;">
-  <div style="display: inline-block; margin: 10px;">
-    <img src="https://github.com/user-attachments/assets/56ec9940-49b6-4e4c-bf9b-4ac9a347116e" alt="detail2" height="500"/>
-  </div>
-  <div style="display: inline-block; margin: 10px;">
-    <img src="https://github.com/user-attachments/assets/b38b8a5e-af67-4a8b-9cf7-760632289d89" alt="edit" height="500"/>
-  </div>
-  <div style="display: inline-block; margin: 10px;">
-    <img src="https://github.com/user-attachments/assets/54c29b46-2a4f-4b66-a8be-690abb8a115b" alt="add" height="500"/>
-  </div>
-</div>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5d219913-2825-4d47-a9a1-d6d7b013d213" alt="homepage" height="600" style="float: left; margin-right: 10px;"/>
+  <img src="https://github.com/user-attachments/assets/f28c2a32-b2f5-47da-a9a9-4a71bae5eb0c" alt="favoritepage" height="600" style="float: left; margin-right: 10px;"/>
+  <img src="https://github.com/user-attachments/assets/9f2f76aa-3b21-4563-b0ef-72b20aa3a57b" alt="assistantpage" height="600" style="float: left; margin-right: 10px;"/>
+  <img src="https://github.com/user-attachments/assets/dfdc3b51-3763-4b58-bb15-fe713c6d1fbe" alt="detail1" height="600" style="float: left; margin-right: 10px;"/>
+  <img src="https://github.com/user-attachments/assets/56ec9940-49b6-4e4c-bf9b-4ac9a347116e" alt="detail2" height="600" style="float: left; margin-right: 10px;"/>
+  <img src="https://github.com/user-attachments/assets/b38b8a5e-af67-4a8b-9cf7-760632289d89" alt="edit" height="600" style="float: left; margin-right: 10px;"/>
+  <img src="https://github.com/user-attachments/assets/54c29b46-2a4f-4b66-a8be-690abb8a115b" alt="add" height="600" style="float: left; margin-right: 10px;"/>
+</p>
 
 ## Opis
 Aplikacja wieloplatformowa umożliwiająca przechowywanie i zarządzanie przepisami kulinarnymi. Dzięki niej możesz tworzyć, edytować i organizować swoje przepisy w prosty i wygodny sposób.
