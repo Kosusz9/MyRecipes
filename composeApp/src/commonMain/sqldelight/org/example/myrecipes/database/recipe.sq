@@ -1,0 +1,40 @@
+import kotlin.Boolean;
+
+CREATE TABLE recipeEntity (
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    title TEXT NOT NULL,
+    description TEXT,
+    preparation TEXT NOT NULL,
+    ingredients TEXT NOT NULL,
+    calories INTEGER,
+    proteins INTEGER,
+    fats INTEGER,
+    carbs INTEGER,
+    mainPhotoPath TEXT,
+    createdAt INTEGER NOT NULL,
+    isFavorite INTEGER AS Boolean DEFAULT 0 NOT NULL
+);
+
+getRecipes: SELECT * FROM recipeEntity ORDER BY title ASC;
+getRecipeById: SELECT * FROM recipeEntity WHERE id = :id;
+getRecentRecipes: SELECT * FROM recipeEntity ORDER BY createdAt DESC LIMIT :amount;
+getFavoriteRecipes: SELECT * FROM recipeEntity WHERE isFavorite = 1 ORDER BY title ASC;
+
+insertRecipe: INSERT OR REPLACE INTO recipeEntity(
+    id,
+    title,
+    description,
+    preparation,
+    ingredients,
+    calories,
+    proteins,
+    fats,
+    carbs,
+    mainPhotoPath,
+    createdAt,
+    isFavorite
+) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+
+addOrRemoveRecipeFromFavorite: UPDATE recipeEntity SET isFavorite = CASE WHEN isFavorite = 1 THEN 0 ELSE 1 END WHERE id = :id;
+
+deleteRecipe: DELETE FROM recipeEntity WHERE id = :id;
