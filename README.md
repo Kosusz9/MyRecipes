@@ -1,14 +1,32 @@
-This is a Kotlin Multiplatform project targeting Android, iOS.
+# Aplikacja wieloplatformowa do przechowywania przepisów
+![app-icon-256](https://github.com/user-attachments/assets/a46cda38-a4a2-44be-a4e1-6f50249f90d0)
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+## Wygląd
+<img src="https://github.com/user-attachments/assets/5d219913-2825-4d47-a9a1-d6d7b013d213" alt="homepage" height="400" style="display: inline-block; margin-right: 10px;"/>
+<img src="https://github.com/user-attachments/assets/f28c2a32-b2f5-47da-a9a9-4a71bae5eb0c" alt="favoritepage" height="400" style="display: inline-block; margin-right: 10px;"/>
+<img src="https://github.com/user-attachments/assets/9f2f76aa-3b21-4563-b0ef-72b20aa3a57b" alt="assistantpage" height="400" style="display: inline-block; margin-right: 10px;"/>
+<img src="https://github.com/user-attachments/assets/dfdc3b51-3763-4b58-bb15-fe713c6d1fbe" alt="detail1" height="400" style="display: inline-block; margin-right: 10px;"/>
+<img src="https://github.com/user-attachments/assets/56ec9940-49b6-4e4c-bf9b-4ac9a347116e" alt="detail2" height="400" style="display: inline-block; margin-right: 10px;"/>
+<img src="https://github.com/user-attachments/assets/b38b8a5e-af67-4a8b-9cf7-760632289d89" alt="edit" height="400" style="display: inline-block; margin-right: 10px;"/>
+<img src="https://github.com/user-attachments/assets/54c29b46-2a4f-4b66-a8be-690abb8a115b" alt="add" height="400" style="display: inline-block; margin-right: 10px;"/>
 
-* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform, 
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+## Opis
+Aplikacja wieloplatformowa umożliwiająca przechowywanie i zarządzanie przepisami kulinarnymi. Dzięki niej możesz tworzyć, edytować i organizować swoje przepisy w prosty i wygodny sposób.
 
+## Możliwości Aplikacji
+- **Dodawanie Przepisów:** Każdy przepis może zawierać zdjęcie, tytuł, opis, instrukcje przygotowania, składniki oraz informacje o wartościach odżywczych. Wszystkie przepisy są przechowywane w lokalnej bazie danych.
+- **Edycja Przepisów:** Możliwość modyfikowania istniejących przepisów.
+- **Dodawanie Przepisów do Ulubionych:** Szybki dostęp do ulubionych przepisów.
+- **Podgląd Ostatnio Dodanych Przepisów:** Łatwy dostęp do najnowszych dodanych przepisów.
+- **Asystent Sztucznej Inteligencji:** Wbudowany asystent AI, który pomoże w przygotowaniu przepisów.
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+## Wymagania
+*DISCLAIMER*: Aby funkcjonalność czatu ze sztuczną inteligencją działała poprawnie, konieczne jest ręczne dodanie klucza API. Klucz API można wygenerować na stronie, np. [https://console.groq.com/keys](https://console.groq.com/keys).
+
+Po wygenerowaniu klucza, należy go dodać do pliku:
+`composeApp/src/commonMain/kotlin/org/example/myrecipes/ai/ChatAIClient.kt`
+- w miejscu zmiennej `apiKey` zamiast YOUR_API_KEY.
+- istnieje również możliwość zmiany modelu językowego na inny dostępny(występują ograniczenia) [https://console.groq.com/docs/models](https://console.groq.com/docs/models) poprzez zmianę wartości `model` w tym samym pliku.
+
+## Autorzy
+- [Mateusz Kostrzewski](https://github.com/Kosusz9)
